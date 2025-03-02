@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* Modern Color Palette */
+    --primary-color: #0F172A; /* Dark Blue Gray */
+    --secondary-color: #4F46E5; /* Indigo */
+    --accent-color: #22C55E; /* Emerald Green */
+    --background-color: #E0E7FF; /* Light Blue */
+    --card-bg-color: #FFFFFF; /* White */
+    --text-primary: #111827; /* Almost Black */
+    --text-secondary: #64748B; /* Slate Gray */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin: 2rem 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E2E8F0;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    gap: 0.5rem;
+}
+
+.msg {
+    margin: 2rem 0;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
